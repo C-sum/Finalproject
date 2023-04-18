@@ -1,0 +1,65 @@
+.container {
+    height: 500px;
+    width:350px;
+    background-color:gray;
+    position:absolute;
+    margin: auto;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index: -1;
+}
+
+
+.catt{
+    position: relative;
+    top:25px;
+    left:50px;
+}
+.face{
+    background-color: #0a58ca;
+    height: 90px;
+    width:150px;
+    border-radius: 30px;
+}
+
+.ear-l,.ear-r {
+    width:0;
+    height:0;
+    border-bottom: 50px solid#0b0b0b;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    position:relative;
+    z-index: -1;
+}
+
+.ear-l{
+    bottom:35px;
+    transform:rotate(-30deg);
+}
+.ear-r{
+    bottom:85px;
+    left:110px;
+    transform:rotate(30deg);
+
+
+}
+.inner1 {
+    width:0;
+    height:0;
+    border-bottom: 50px solid green;
+    border-left: 25px solid transparent;
+    right:25px;
+    position: relative;
+}
+
+.inner2{
+    width:0;
+    height:0;
+    border-bottom: 50px solid green;
+    border-right: 25px solid transparent;
+    position: relative;
+}
+
+
