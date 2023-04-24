@@ -11,14 +11,25 @@
     z-index: -1;
 }
 
+.cat-button{
+    position: relative;
+    top:140px;
+    left:50px;
+    background-color: coral;
+    height: 90px;
+    width:150px;
+    border-radius: 30px;
+    opacity: 0.5%;
+}
+
 
 .catt{
     position: relative;
-    top:25px;
+    top:50px;
     left:50px;
 }
 .face{
-    background-color: #0a58ca;
+    background-color: black;
     height: 90px;
     width:150px;
     border-radius: 30px;
@@ -61,5 +72,112 @@
     border-right: 25px solid transparent;
     position: relative;
 }
+.eye-l, .eye-r {
+    background-color:rgb(108, 232, 125) ;
+    height:30px;
+    width:30px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.eye-l{
+    bottom:75px;
+    left:30px;
+}
+.eye-r{
+    bottom: 105px;
+    left:90px;
+}
+
+.eyeball {
+    background-color: black;
+    height:24px;
+    width:24px;
+    border-radius: 50%;
+    position:relative;
+    top:3px;
+    left:3px;
+}
+
+.nose{
+    height:0;
+    width: 0;
+    border-top: 8px solid darkgreen;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    position: relative;
+    bottom:110px;
+    left: 68px;
+}
+
+.lips1,.lips2 {
+    background-color: greenyellow;
+    height:8px;
+    width:1px;
+    position:relative;
+    border-radius: 5px;
+
+}
+
+.lips1 {
+    transform: rotate(45deg);
+    right:4px;
+    bottom:1.5px;
+}
+
+.lips2 {
+    transform: rotate(-45deg);
+    left:3px;
+    bottom:10px;
+}
+
+.beard-1,.beard-2, .beard-3,.beard-4,.beard-5,.beard-6{
+    width: 30px;
+    height: 2.5px;
+    background-color: greenyellow;
+    border-radius: 50px 50px 20px 20px;
+}
+.beard-1{
+    bottom: 110px;
+    left: 5px;
+    transform: rotate(180deg);
+    position: relative;
+}
+.beard-2{
+    position: relative;
+    bottom: 105px;
+    left: 5px;
+    transform: rotate(180deg);
+}
+.beard-3{
+    position: relative;
+    bottom: 100px;
+    left: 5px;
+    transform: rotate(180deg);
+}
+
+.beard-4 {
+    position: relative;
+    bottom: 109.5px;
+    left: 115px;
+    transform: rotate(180deg);
+
+}
+.beard-5 {
+    position: relative;
+    bottom: 105px;
+    left: 115px;
+    transform: rotate(180deg);
+
+}
+.beard-6 {
+    position: relative;
+    bottom: 122px;
+    left: 115px;
+    transform: rotate(180deg);
+
+
+}
+
 
 
