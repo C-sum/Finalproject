@@ -11,7 +11,7 @@ https://templatemo.com/tm-567-nomad-force
 -----------------------------------------*/
 :root {
   --white-color:                  #FFFFFF;
-  --primary-color:                #ffc107;
+  --primary-color:                greenyellow;
   --section-bg-color:             #f9f9f9;
   --dark-color:                   #000000;
   --grey-color:                   #fcfeff;
@@ -43,10 +43,162 @@ html {
 }
 
 body {
-    background: var(--white-color);
-    font-family: var(--body-font-family);    
-    position: relative;
+  background: var(--white-color);
+  font-family: var(--body-font-family);
+  position: relative;
 }
+
+/*catt button*/
+.cat-button{
+  position: relative;
+  top:90px;
+  left:0px;
+  background-color: black;
+  height: 90px;
+  width:150px;
+  border-radius: 30px;
+}
+
+.ear-l,.ear-r {
+  width:0;
+  height:0;
+  border-bottom: 50px solid#0b0b0b;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  position:relative;
+  z-index: -1;
+}
+
+.ear-l{
+  bottom:35px;
+  transform:rotate(-30deg);
+}
+.ear-r{
+  bottom:85px;
+  left:110px;
+  transform:rotate(30deg);
+}
+.inner1 {
+  width:0;
+  height:0;
+  border-bottom: 50px solid green;
+  border-left: 25px solid transparent;
+  right:25px;
+  position: relative;
+}
+
+.inner2{
+  width:0;
+  height:0;
+  border-bottom: 50px solid green;
+  border-right: 25px solid transparent;
+  position: relative;
+}
+.eye-l, .eye-r {
+  background-color:rgb(108, 232, 125) ;
+  height:30px;
+  width:30px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.eye-l{
+  bottom:75px;
+  left:30px;
+}
+.eye-r{
+  bottom: 105px;
+  left:90px;
+}
+
+.eyeball {
+  background-color: black;
+  height:24px;
+  width:24px;
+  border-radius: 50%;
+  position:relative;
+  top:3px;
+  left:3px;
+}
+
+.nose{
+  height:0;
+  width: 0;
+  border-top: 8px solid darkgreen;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  position: relative;
+  bottom:110px;
+  left: 68px;
+}
+
+.lips1,.lips2 {
+  background-color: greenyellow;
+  height:8px;
+  width:1px;
+  position:relative;
+  border-radius: 5px;
+
+}
+
+.lips1 {
+  transform: rotate(45deg);
+  right:4px;
+  bottom:1.5px;
+}
+
+.lips2 {
+  transform: rotate(-45deg);
+  left:3px;
+  bottom:10px;
+}
+
+.beard-1,.beard-2, .beard-3,.beard-4,.beard-5,.beard-6{
+  width: 30px;
+  height: 2.5px;
+  background-color: greenyellow;
+  border-radius: 50px 50px 20px 20px;
+}
+.beard-1{
+  bottom: 110px;
+  left: 5px;
+  transform: rotate(180deg);
+  position: relative;
+}
+.beard-2{
+  position: relative;
+  bottom: 105px;
+  left: 5px;
+  transform: rotate(180deg);
+}
+.beard-3{
+  position: relative;
+  bottom: 100px;
+  left: 5px;
+  transform: rotate(180deg);
+}
+
+.beard-4 {
+  position: relative;
+  bottom: 109.5px;
+  left: 115px;
+  transform: rotate(180deg);
+}
+.beard-5 {
+  position: relative;
+  bottom: 105px;
+  left: 115px;
+  transform: rotate(180deg);
+}
+.beard-6 {
+  position: relative;
+  bottom: 122px;
+  left: 115px;
+  transform: rotate(180deg);
+}
+
+
+
 
 /*---------------------------------------
   TYPOGRAPHY               
@@ -111,7 +263,7 @@ p {
   color: var(--text-secondary-white-color);
 }
 
-a, 
+a,
 button {
   touch-action: manipulation;
   transition: all 0.3s;
@@ -209,8 +361,8 @@ strong {
   NAVIGATION               
 -----------------------------------------*/
 .catlogo {
-  width: 130px;
-  height: 100px;
+  width: 100px;
+  height: 70px;
   object-fit: cover;
 }
 
@@ -274,7 +426,7 @@ strong {
 }
 
 .navbar-nav .nav-item.active .nav-link,
-.nav-link:focus, 
+.nav-link:focus,
 .nav-link:hover {
   color: var(--dark-color);
 }
@@ -408,7 +560,7 @@ strong {
   padding: 22px 32px 32px 32px;
 }
 
-.carousel-control-next, 
+.carousel-control-next,
 .carousel-control-prev {
   top: auto;
   bottom: 2.5rem;
@@ -419,7 +571,7 @@ strong {
   left: auto;
 }
 
-.carousel-control-next-icon, 
+.carousel-control-next-icon,
 .carousel-control-prev-icon {
   background-color: var(--dark-color);
   background-size: 50% 50%;
@@ -435,6 +587,7 @@ strong {
   position: relative;
   overflow: hidden;
   height: min-content;
+  width: fit-content;
 }
 
 .portfolio-info {
@@ -444,6 +597,10 @@ strong {
 /*---------------------------------------
   NEWS & EVENTS               
 -----------------------------------------*/
+
+.Catwall {
+  background: var(--section-bg-color);
+}
 
 .news,
 .related-news {
@@ -551,23 +708,6 @@ strong {
   color: rgba(255, 255, 255, 0.65);
 }
 
-
-/* show me a cat section */
-.cat-button{
-  position: relative;
-  top:120px;
-  width:150px;
-  height: 80px;
-  padding: 20px;
-  border-radius: 10px;
-  border: none;
-  color: white;
-  font-size: 20px;
-  background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
-}
-
-
-
 /*---------------------------------------
   SECTION               
 -----------------------------------------*/
@@ -590,11 +730,14 @@ strong {
   padding-bottom: 12px;
 }
 
+/*changes*/
 .contact-form button[type='submit'] {
-  background: var(--dark-color);
+  /*background: var(--dark-color);*/
+  background-color: rgb(41, 178, 186);
   border: none;
   border-radius: 100px;
-  color: var(--white-color);
+  /*color: var(--white-color);*/
+  color: #0b0b0b;
   font-weight: var(--font-weight-bold);
   text-transform: uppercase;
   padding: 16px;
@@ -603,6 +746,8 @@ strong {
 
 .contact-form button[type='submit']:hover {
   background: var(--primary-color);
+  color: white;
+/*//changes*/
 }
 
 .form-label {
@@ -610,9 +755,10 @@ strong {
   font-weight: var(--font-weight-bold);
 }
 
+/*changes*/
 .map-iframe {
   display: block;
-  /* filter: grayscale(100); */
+  filter: grayscale(100);
 }
 
 /*---------------------------------------
@@ -631,8 +777,9 @@ strong {
 
 .site-footer .custom-link:hover,
 .site-footer .social-icon-link:hover {
-  color: var(--white-color);
+  color: greenyellow;
 }
+
 
 .copyright-text {
   color: rgba(255, 255, 255, 0.45);
@@ -664,7 +811,7 @@ strong {
 }
 
 .social-icon-link:hover {
-  color: var(--primary-color);
+  color: greenyellow;
 }
 
 /*---------------------------------------
@@ -747,4 +894,3 @@ strong {
     font-size: 22px;
   }
 }
-
