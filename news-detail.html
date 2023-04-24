@@ -15,7 +15,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700;900&display=swap" rel="stylesheet">
-        
+
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/bootstrap-icons.css" rel="stylesheet">
 
@@ -35,16 +35,16 @@ https://templatemo.com/tm-567-nomad-force
 
 -->
     </head>
-    
+
     <body>
-    
+
         <main>
 
             <section class="hero" id="hero">
                 <div class="heroText">
-                    <h1 class="news-detail-title text-white mt-lg-5 mb-lg-4" data-aos="zoom-in" data-aos-delay="300">
+                    <!-- <h1 class="news-detail-title text-white mt-lg-5 mb-lg-4" data-aos="zoom-in" data-aos-delay="300">
                         Show me a Cat!
-                    </h1>
+                    </h1> -->
                     <!-- <div class="d-flex justify-content-center align-items-center">
                         <a href="#" class="text-secondary-white-color social-share-link">
                             <i class="bi-chat-square-fill me-1"></i>
@@ -52,14 +52,14 @@ https://templatemo.com/tm-567-nomad-force
                         </a>
 
                         <a href="#" class="social-share-link bi-bookmark-fill ms-3 me-4"></a>
-                        
+
                         <span>21 hours ago</span>
                     </div> -->
                 </div>
 
                 <div class="videoWrapper">
-                    <video autoplay="" loop="" muted="" class="custom-video" class="img-fluid news-detail-image" alt="">
-                        <source src="catvideo2.mp4" type="video/mp4">
+                    <video autoplay="" loop="" muted="" class="custom-video" class="img-fluid news-detail-image" alt="" poster="catposter.png">
+                        <source src="Catvideo-mod.mp4" type="video/mp4">
                     </video>
                 </div>
 
@@ -101,31 +101,56 @@ https://templatemo.com/tm-567-nomad-force
                 </div>
             </nav>
 
-            <section class="news-detail section-padding">
+            <section class="news-detail section-padding" class="Catwall">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 col-10 mx-auto">
-                            <h2 class="mb-3" data-aos="fade-up">See funny cats at the push of a button!</h2>
-                            <p data-aos="fade-up"><button id="cat-button" class="cat-button">Show me a cat!</button></p>
+                            <h2 class="mb-3" data-aos="fade-up">Press the cat button see the photos!</h2>
+                            <!--catt button-->
+                            <div class="container" data-aos="flip-right"> <!--change-->
+                                <div class="row">
+                                    <div class="col-6">
+                                        <button id="cat-button" class="cat-button"></button>
+                                        <div class="catt">
+                                            <div class="face">
+                                                <div class="ear-l">
+                                                    <div class="inner1"></div>
+                                                </div>
+                                                <div class="ear-r">
+                                                    <div class="inner2"></div>
+                                                </div>
 
-                            <div class="clearfix my-4 mt-lg-0 mt-5">
-                                <div class="col-md-8 float-md-end mb-3 ms-md-3" data-aos="fade-up">
-                                    <figure class="figure">
-                                        <div class="col-10" id="cat-container" class="cat-container" alt=""></div>
+                                            </div>
+                                            <div class="eye-l">
+                                                <div class="eyeball"></div>
+                                            </div>
+                                            <div class="eye-r">
+                                                <div class="eyeball"></div>
+                                            </div>
+                                            <div class="nose">
+                                                <div class="lips1"></div>
+                                                <div class="lips2"></div>
+                                            </div>
+                                            <div class="beard-1"></div>
+                                            <div class="beard-2"></div>
+                                            <div class="beard-3"></div>
+                                            <div class="beard-4"></div>
+                                            <div class="beard-5"></div>
+                                            <div class="beard-6"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div data-aos="fade-up">
+                                            <figure class="figure">
+                                                <div class="col-6" id="cat-container" class="cat-container" alt=""></div>
 
-                                        <figcaption class="figure-caption text-end">Json file From free HTTP Cats!</figcaption>
-                                    </figure>
+                                                <figcaption class="figure-caption text-end">Json file From free HTTP Cats!</figcaption>
+                                            </figure>
+                                        </div>
+
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="social-share d-flex mt-5">
-                                <span class="me-4" data-aos="zoom-in">Share this article:</span>
-
-                                <a href="#" class="social-share-icon bi-facebook" data-aos="zoom-in"></a>
-
-                                <a href="#" class="social-share-icon bi-twitter mx-3" data-aos="zoom-in"></a>
-
-                                <a href="#" class="social-share-icon bi-envelope" data-aos="zoom-in"></a>
                             </div>
                         </div>
 
@@ -133,7 +158,7 @@ https://templatemo.com/tm-567-nomad-force
                 </div>
             </section>
 
-            <section class="related-news section-padding">
+            <!-- <section class="related-news section-padding">
                 <div class="container">
                     <div class="row">
                             <section class="google-map">
@@ -142,7 +167,7 @@ https://templatemo.com/tm-567-nomad-force
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
         </main>
 
@@ -157,14 +182,14 @@ https://templatemo.com/tm-567-nomad-force
                         </h5>
 
                         <a href="mailto:info@company.com" class="custom-link mt-3 mb-5">
+                            <i class="bi-envelope-fill me-2"></i>
                             www.Heavencat@company.com
                         </a>
                     </div>
 
                     <div class="col-6">
-                        <p class="copyright-text mb-0">Copyright © Heaven Cat 2023. All rights reserved. 
-                        <br><br>Design: <a href="https://templatemo.com/page/1" target="_parent">TemplateMo</a></p>
-                    
+                        <p class="copyright-text mb-0">Copyright © Heaven Cat 2023. All rights reserved.
+                        <!-- <br><br>Design: <a href="https://templatemo.com/page/1" target="_parent">TemplateMo</a></p> -->
                     </div>
 
                     <div class="col-lg-3 col-5 ms-auto">
@@ -176,9 +201,8 @@ https://templatemo.com/tm-567-nomad-force
                             <li><a href="#"><i class='fab fa-youtube'style='font-size:23px; margin: 4px;'></i></a></li>
                         </ul>
                     </div>
-
                 </div>
-            </section>
+            </div>
         </footer>
 
         <!-- JAVASCRIPT FILES -->
@@ -190,7 +214,7 @@ https://templatemo.com/tm-567-nomad-force
         <script src="js/magnific-popup-options.js"></script>
         <script src="js/scrollspy.min.js"></script>
         <script src="js/custom.js"></script>
-        <script src="js/catdata.js"></script>  
+        <script src="js/catdata.js"></script>
 
     </body>
 </html>
